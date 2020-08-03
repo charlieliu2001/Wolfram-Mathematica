@@ -1,0 +1,140 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4730,        132]
+NotebookOptionsPosition[      4106,        113]
+NotebookOutlinePosition[      4557,        130]
+CellTagsIndexPosition[      4514,        127]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"row1", "=", "2213"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"row2", "=", "2505"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"col1", "=", "1071"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"col2", "=", "1800"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Export", "[", " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringTemplate", "[", 
+        RowBox[{
+        "\"\<C:\\\\Users\\\\charl\\\\Desktop\\\\Projects\\\\Pictures\\\\Test\\\
+\\Small\\\\`t` small.JPG\>\"", ",", 
+         RowBox[{"InsertionFunction", "\[Rule]", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"ToString", "@", 
+             RowBox[{"NumberForm", "[", 
+              RowBox[{"#", ",", 
+               RowBox[{"{", 
+                RowBox[{"2", ",", "2"}], "}"}]}], "]"}]}], "&"}], ")"}]}]}], 
+        "]"}], "@", 
+       RowBox[{"<|", 
+        RowBox[{"\"\<t\>\"", "\[Rule]", "i"}], "|>"}]}], " ", ",", 
+      RowBox[{"ImageTake", "[", 
+       RowBox[{
+        RowBox[{"Import", "[", 
+         RowBox[{
+          RowBox[{"StringTemplate", "[", 
+           RowBox[{
+           "\"\<C:\\\\Users\\\\charl\\\\Desktop\\\\Projects\\\\Pictures\\\\\
+Test\\\\`t`.JPG\>\"", ",", 
+            RowBox[{"InsertionFunction", "\[Rule]", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"ToString", "@", 
+                RowBox[{"NumberForm", "[", 
+                 RowBox[{"#", ",", 
+                  RowBox[{"{", 
+                   RowBox[{"2", ",", "2"}], "}"}]}], "]"}]}], "&"}], 
+              ")"}]}]}], "]"}], "@", 
+          RowBox[{"<|", 
+           RowBox[{"\"\<t\>\"", "\[Rule]", "i"}], "|>"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"row1", ",", "row2"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"col1", ",", "col2"}], "}"}]}], "]"}]}], "]"}], " ", ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", "9"}], "}"}]}], "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.803266703013007*^9, 3.8032667308602123`*^9}, {
+  3.8032667709338074`*^9, 3.8032667909138403`*^9}, {3.803266829574767*^9, 
+  3.8032668522046757`*^9}, {3.8032669039983826`*^9, 3.8032669482905664`*^9}, {
+  3.80326701066393*^9, 3.8032671388802004`*^9}},
+ CellLabel->"In[41]:=",ExpressionUUID->"cd036e9d-0dbb-4c1a-a64f-a95242834220"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+  "\"\<C:\\\\Users\\\\charl\\\\Desktop\\\\Projects\\\\Pictures\\\\Test\\\\\
+Small\\\\Binarized.JPG\>\"", ",", 
+   RowBox[{"DeleteSmallComponents", "[", 
+    RowBox[{
+     RowBox[{"Binarize", "[", 
+      RowBox[{"ImageTake", "[", 
+       RowBox[{
+        RowBox[{
+        "Import", "[", 
+         "\"\<C:\\\\Users\\\\charl\\\\Desktop\\\\Projects\\\\Pictures\\\\Test\
+\\\\9.JPG\>\"", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"row1", ",", "row2"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"col1", ",", "col2"}], "}"}]}], "]"}], "]"}], ",", "10"}], 
+    "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.803267249743784*^9, 3.8032673880813856`*^9}, {
+  3.803267419862501*^9, 3.803267453789873*^9}},
+ CellLabel->"In[48]:=",ExpressionUUID->"8f7ff82f-c60a-4131-934d-c2e05acba431"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\charl\\\\Desktop\\\\Projects\\\\Pictures\\\\\
+Test\\\\Small\\\\Binarized.JPG\"\>"], "Output",
+ CellChangeTimes->{
+  3.8032673924982977`*^9, {3.803267436948328*^9, 3.8032674550280123`*^9}},
+ CellLabel->"Out[48]=",ExpressionUUID->"1f846b2a-54e2-4eeb-bc3d-165b7ad359ab"]
+}, Open  ]]
+},
+WindowSize->{1097.3999999999999`, 615.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"e0ae0628-f2a6-41ed-8a98-e0f30fb83219"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2360, 59, 107, "Input",ExpressionUUID->"cd036e9d-0dbb-4c1a-a64f-a95242834220"],
+Cell[CellGroupData[{
+Cell[2943, 83, 844, 21, 36, "Input",ExpressionUUID->"8f7ff82f-c60a-4131-934d-c2e05acba431"],
+Cell[3790, 106, 300, 4, 24, "Output",ExpressionUUID->"1f846b2a-54e2-4eeb-bc3d-165b7ad359ab"]
+}, Open  ]]
+}
+]
+*)
+
